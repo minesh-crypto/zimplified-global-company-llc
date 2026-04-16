@@ -7,40 +7,32 @@
   <!-- FONTS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <title>Zimplified Global | Institutional Strategic Hub</title>
+  <title>Zimplified Global | Strategic Consultancy Dubai</title>
 
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-    }
-    h1, h2, h3 {
-      font-family: 'Playfair Display', serif;
-    }
+    body { font-family: 'Inter', sans-serif; background:#f8f7f4; }
+    h1,h2,h3 { font-family: 'Playfair Display', serif; letter-spacing:-0.01em; }
 
-    /* Scroll Reveal - Quiet Luxury Motion */
-    .reveal {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    }
-    .reveal.active {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    
-    .letterhead-spacing { letter-spacing: 0.35em; }
+    .h1 { font-size: clamp(44px,6vw,72px); line-height:1.05; }
+    .h2 { font-size: clamp(32px,4vw,44px); line-height:1.15; }
+    .h3 { font-size:24px; line-height:1.3; }
+    .body-lg { font-size:18px; line-height:1.7; color:#64748b; }
+    .eyebrow { font-size:11px; letter-spacing:.35em; text-transform:uppercase; color:#c5a059; font-weight: 700; }
+
+    .reveal { opacity:0; transform:translateY(30px); transition:all .8s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+    .reveal.active { opacity:1; transform:translateY(0); }
   </style>
 </head>
 
-<body class="bg-[#f8f7f4] text-slate-700 antialiased">
+<body class="pt-12">
 
 <!-- NAVBAR -->
-<nav id="navbar" class="fixed top-0 left-0 w-full backdrop-blur-md bg-white/70 border-b border-slate-200 z-50 transition-all duration-300 py-5">
-  <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+<nav id="navbar" class="fixed top-0 w-full z-50 backdrop-blur-md bg-white/70 border-b border-slate-200 transition">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
     <div class="w-[220px]">
       <svg viewBox="0 0 220 50" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
@@ -51,94 +43,95 @@
       </svg>
     </div>
 
-    <div class="hidden md:flex items-center gap-10 text-[10px] uppercase font-bold tracking-widest leading-none">
-      <a href="#expertise" class="text-slate-500 hover:text-[#0f172a] transition">Expertise</a>
-      <a href="#framework" class="text-slate-500 hover:text-[#0f172a] transition">Framework</a>
+    <div class="hidden md:flex items-center gap-8 text-[10px] uppercase font-bold tracking-widest">
+      <a href="#expertise" class="text-slate-600 hover:text-[#c5a059] transition">Expertise</a>
+      <a href="#framework" class="text-slate-600 hover:text-[#c5a059] transition">Framework</a>
       
-      <div class="flex items-center border-l border-slate-200 pl-10 ml-2">
-        <span class="text-sm text-slate-500">Dubai Office</span>
-        <span class="ml-2 font-medium text-[#0f172a]">+971 4 553 6964</span>
+      <div class="flex items-center border-l border-slate-200 pl-8 ml-2 gap-6">
+        <div class="flex flex-col text-right">
+          <span class="text-slate-400 font-medium lowercase tracking-normal">Dubai Office</span>
+          <span class="text-[#0f172a] font-black tracking-normal leading-none">+971 4 553 6964</span>
+        </div>
 
-        <a href="mailto:zimplifiedglobal@gmail.com" class="ml-10 px-6 py-2 border border-slate-300 rounded-full hover:bg-[#0f172a] hover:text-white transition-all duration-300">
+        <a href="mailto:zimplifiedglobal@gmail.com" class="px-5 py-2 border border-slate-300 rounded-full hover:bg-[#0f172a] hover:text-white transition">
           Inquiry
         </a>
       </div>
     </div>
-
   </div>
 </nav>
 
 <!-- HERO -->
-<section id="home" class="min-h-screen flex items-center pt-20 pb-16 overflow-hidden">
+<section id="home" class="min-h-[90vh] flex items-center pt-8 pb-16">
   <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
 
-    <div class="max-w-xl reveal active">
-      <p class="text-xs tracking-[0.35em] text-[#c5a059] uppercase font-bold mb-3">
-        Strategic Advisory · Dubai
-      </p>
+    <div class="max-w-xl reveal">
+      <p class="eyebrow mb-3">Strategic Advisory · Dubai</p>
 
-      <h1 class="text-[52px] md:text-[72px] leading-[1.1] tracking-tight text-[#0f172a] font-serif mb-5">
-        Structuring<br>Global Growth.
+      <h1 class="h1 mb-5">
+        Structuring Global Growth.
       </h1>
 
-      <p class="text-slate-600 text-lg font-light leading-relaxed max-w-lg">
+      <p class="body-lg max-w-lg">
         Strategic advisory for market entry, operational alignment,
         and scalable international expansion.
       </p>
     </div>
 
-    <div class="relative reveal active" style="transition-delay: 0.2s">
-      <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&w=1200&q=80" 
+    <div class="relative reveal" style="transition-delay: 0.2s">
+      <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1600&auto=format"
            alt="Institutional Global Architecture"
-           class="w-full h-[520px] object-cover rounded-xl shadow-md grayscale contrast-110"/>
+           class="w-full h-[600px] object-cover rounded-xl shadow-lg grayscale contrast-110">
     </div>
 
   </div>
 </section>
 
-<!-- LETTERHEAD -->
-<section class="bg-white py-10 border-t border-b border-slate-100">
-  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between text-[10px] uppercase font-bold text-slate-400 tracking-[0.4em] gap-4">
-    <div class="flex flex-wrap gap-x-8 gap-y-2">
-      <span>Dubai</span>
-      <span>Singapore</span>
-      <span>Hong Kong</span>
-      <span>India</span>
-      <span>Africa</span>
-    </div>
-    <div class="text-[#0f172a] font-black">+971 4 553 6964</div>
-  </div>
-</section>
+<!-- AUTHORITY LINE -->
+<div class="reveal">
+  <p class="text-sm text-slate-500 tracking-wide text-center pb-24 italic">
+    Supporting businesses across UAE, Singapore, Hong Kong, India, and emerging markets
+  </p>
+</div>
+
+<!-- TRANSITION -->
+<div class="h-20 bg-gradient-to-b from-[#f8f7f4] to-white"></div>
 
 <!-- EXPERTISE -->
-<section id="expertise" class="py-40 bg-[#f8f7f4]">
+<section id="expertise" class="py-32 bg-white">
   <div class="max-w-7xl mx-auto px-6">
 
-    <div class="mb-24 reveal">
-      <span class="text-[10px] uppercase tracking-[0.5em] text-[#c5a059] font-bold mb-4 block">Strategic Capabilities</span>
-      <h2 class="text-5xl text-[#0f172a]">Infrastructure for Excellence.</h2>
-    </div>
+    <h2 class="h2 text-center mb-24 reveal">Strategic Capabilities</h2>
 
     <div class="grid md:grid-cols-2 gap-24">
 
-      <div class="reveal border-l border-slate-200 pl-10">
-        <h3 class="text-2xl text-[#0f172a] mb-6">Strategic Advisory<br>& Governance</h3>
-        <p class="text-slate-600 font-light text-sm leading-relaxed">High-level structuring of resilient business models and world-class governance systems for multi-region operations.</p>
+      <div class="reveal border-l border-slate-100 pl-10">
+        <h3 class="h3 mb-4">Management Consulting</h3>
+        <p class="body-lg">
+          Delivering structured management frameworks to enhance governance,
+          efficiency, and scalability across complex organizations.
+        </p>
       </div>
 
-      <div class="reveal border-l border-slate-200 pl-10" style="transition-delay: 0.1s">
-        <h3 class="text-2xl text-[#0f172a] mb-6">Market Intelligence<br>& Research</h3>
-        <p class="text-slate-600 font-light text-sm leading-relaxed">Data-driven feasibility studies and localized intelligence for informed market entry across emerging global hubs.</p>
+      <div class="reveal border-l border-slate-100 pl-10" style="transition-delay: 0.1s">
+        <h3 class="h3 mb-4">Market Research</h3>
+        <p class="body-lg">
+          Data-driven intelligence enabling informed market entry and strategic positioning in burgeoning sectors.
+        </p>
       </div>
 
-      <div class="reveal border-l border-slate-200 pl-10" style="transition-delay: 0.2s">
-        <h3 class="text-2xl text-[#0f172a] mb-6">Organizational<br>Structuring</h3>
-        <p class="text-slate-600 font-light text-sm leading-relaxed">Designing efficient human capital frameworks and institutionalized operational systems for seamless growth.</p>
+      <div class="reveal border-l border-slate-100 pl-10" style="transition-delay: 0.2s">
+        <h3 class="h3 mb-4">Feasibility Studies</h3>
+        <p class="body-lg">
+          Comprehensive evaluation of commercial viability, risk mitigation, and projected financial outcomes for global ventures.
+        </p>
       </div>
 
-      <div class="reveal border-l border-slate-200 pl-10" style="transition-delay: 0.3s">
-        <h3 class="text-2xl text-[#0f172a] mb-6">Project Development<br>& Execution</h3>
-        <p class="text-slate-600 font-light text-sm leading-relaxed">End-to-end management of complex strategic initiatives, transitioning from blueprint to global deployment.</p>
+      <div class="reveal border-l border-slate-100 pl-10" style="transition-delay: 0.3s">
+        <h3 class="h3 mb-4">Project Development</h3>
+        <p class="body-lg">
+          Translating complex strategic blueprints into high-performance executable, scalable initiatives.
+        </p>
       </div>
 
     </div>
@@ -146,141 +139,123 @@
 </section>
 
 <!-- TRANSITION -->
-<div class="h-32 bg-gradient-to-b from-[#f8f7f4] to-[#0f172a]"></div>
+<div class="h-24 bg-gradient-to-b from-white to-[#0f172a]"></div>
 
-<!-- METHODOLOGY: DARK ARTISTIC FRAMEWORK -->
+<!-- FRAMEWORK -->
 <section id="framework" class="relative py-40 text-white overflow-hidden bg-[#0f172a]">
-    <!-- Background Image with Overlay -->
-    <div class="absolute inset-0">
-        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover grayscale brightness-50 opacity-30" alt="Dubai Perspective" />
-        <div class="absolute inset-0 bg-[#0f172a]/85"></div>
-    </div>
 
-    <div class="relative max-w-7xl mx-auto px-6 z-10">
-        <!-- Header -->
-        <div class="text-center max-w-3xl mx-auto reveal">
-            <p class="text-xs tracking-[0.35em] text-[#c5a059] mb-4 uppercase font-bold">OUR METHODOLOGY</p>
-            <h2 class="text-4xl md:text-5xl text-white">The Zimplification Framework</h2>
-            <p class="mt-6 text-slate-300 italic font-serif">"Neutralizing complexity to unlock enterprise potential."</p>
+  <div class="absolute inset-0">
+    <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2000&auto=format"
+         class="w-full h-full object-cover grayscale opacity-20">
+    <div class="absolute inset-0 bg-[#0f172a]/90"></div>
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-6 text-center z-10">
+
+    <p class="eyebrow mb-6">Our Methodology</p>
+    <h2 class="h2 mb-24">The Zimplification Framework</h2>
+
+    <div class="relative">
+      <div class="hidden md:block absolute top-10 left-0 right-0 h-px bg-[#c5a059]/40"></div>
+
+      <div class="grid md:grid-cols-3 gap-20">
+
+        <div class="group reveal">
+          <div class="w-20 h-20 mx-auto rounded-full border border-[#c5a059] flex items-center justify-center text-[#c5a059] text-xl font-light bg-[#0f172a] transition duration-500 group-hover:scale-110 relative z-10">
+            01
+          </div>
+          <h3 class="h3 mt-10">Standardize</h3>
+          <p class="text-slate-400 text-sm mt-4 max-w-xs mx-auto font-light leading-relaxed">
+            Establish structured, audit-ready frameworks to eliminate operational inefficiencies and create a baseline for growth.
+          </p>
         </div>
 
-        <!-- Steps -->
-        <div class="mt-24 grid md:grid-cols-3 gap-16 text-center">
-            <!-- Step 01 -->
-            <div class="group reveal">
-                <div class="w-20 h-20 mx-auto flex items-center justify-center rounded-full border border-[#c5a059]/60 text-[#c5a059] text-xl tracking-widest mb-6 group-hover:border-[#c5a059] transition shadow-[0_0_20px_rgba(197,160,89,0.1)]">
-                    01
-                </div>
-                <h3 class="text-2xl mb-4 text-white">Standardize</h3>
-                <p class="text-slate-400 leading-relaxed text-sm font-light">
-                    Auditing complex enterprise frameworks to create a clean,
-                    neutralized starting point for global alignment.
-                </p>
-            </div>
-
-            <!-- Step 02 -->
-            <div class="group reveal" style="transition-delay: 0.2s">
-                <div class="w-20 h-20 mx-auto flex items-center justify-center rounded-full border border-[#c5a059]/60 text-[#c5a059] text-xl tracking-widest mb-6 group-hover:border-[#c5a059] transition shadow-[0_0_20px_rgba(197,160,89,0.1)]">
-                    02
-                </div>
-                <h3 class="text-2xl mb-4 text-white">Optimize</h3>
-                <p class="text-slate-400 leading-relaxed text-sm font-light">
-                    Enhancing governance and operational models using
-                    world-class international consultancy benchmarks.
-                </p>
-            </div>
-
-            <!-- Step 03 -->
-            <div class="group reveal" style="transition-delay: 0.4s">
-                <div class="w-20 h-20 mx-auto flex items-center justify-center rounded-full border border-[#c5a059]/60 text-[#c5a059] text-xl tracking-widest mb-6 group-hover:border-[#c5a059] transition shadow-[0_0_20px_rgba(197,160,89,0.1)]">
-                    03
-                </div>
-                <h3 class="text-2xl mb-4 text-white">Scale</h3>
-                <p class="text-slate-400 leading-relaxed text-sm font-light">
-                    Deploying finalized strategies across dynamic global markets
-                    with precision, control, and consistency.
-                </p>
-            </div>
+        <div class="group reveal" style="transition-delay: 0.1s">
+          <div class="w-20 h-20 mx-auto rounded-full border border-[#c5a059] flex items-center justify-center text-[#c5a059] text-xl font-light bg-[#0f172a] transition duration-500 group-hover:scale-110 relative z-10">
+            02
+          </div>
+          <h3 class="h3 mt-10">Optimize</h3>
+          <p class="text-slate-400 text-sm mt-4 max-w-xs mx-auto font-light leading-relaxed">
+            Enhance operational performance through rigorous governance and continuous strategic refinement of business models.
+          </p>
         </div>
+
+        <div class="group reveal" style="transition-delay: 0.2s">
+          <div class="w-20 h-20 mx-auto rounded-full border border-[#c5a059] flex items-center justify-center text-[#c5a059] text-xl font-light bg-[#0f172a] transition duration-500 group-hover:scale-110 relative z-10">
+            03
+          </div>
+          <h3 class="h3 mt-10">Scale</h3>
+          <p class="text-slate-400 text-sm mt-4 max-w-xs mx-auto font-light leading-relaxed">
+            Deploy finalized, high-authority growth strategies across dynamic global markets with absolute precision and control.
+          </p>
+        </div>
+
+      </div>
     </div>
+  </div>
 </section>
 
 <!-- TRANSITION -->
-<div class="h-32 bg-gradient-to-b from-[#0f172a] to-[#f8f7f4]"></div>
+<div class="h-24 bg-gradient-to-b from-[#0f172a] to-[#f8f7f4]"></div>
 
 <!-- WHY -->
 <section class="py-40 text-center bg-[#f8f7f4]">
   <div class="max-w-4xl mx-auto px-6 reveal">
-    <span class="text-[10px] uppercase tracking-[0.5em] text-[#c5a059] font-bold mb-8 block">Our Philosophy</span>
-    <h2 class="text-4xl md:text-5xl text-[#0f172a] leading-relaxed italic font-serif">
-      "We operate at the intersection of strategy, structure, and execution—enabling controlled, scalable global expansion."
-    </h2>
+    <span class="eyebrow mb-8 block">Legacy of Excellence</span>
+    <h2 class="h2 text-[#0f172a] italic leading-relaxed">"We operate at the intersection of strategy, structure, and execution—enabling controlled, scalable global expansion."</h2>
   </div>
 </section>
 
 <!-- FOOTER -->
-<footer class="bg-[#0f172a] text-white py-20">
+<footer class="bg-[#0f172a] text-white pt-32 pb-16">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid md:grid-cols-3 gap-24 border-b border-slate-800 pb-16">
 
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
+      <div class="w-[220px]">
+        <svg viewBox="0 0 220 50" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
+          <rect width="36" height="36" fill="#f8f7f4" rx="2"/>
+          <path d="M10 10H26L10 26H26" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+          <text x="50" y="22" font-family="'Playfair Display', serif" font-weight="900" font-size="18" fill="#f8f7f4">ZIMPLIFIED</text>
+          <text x="50" y="36" font-family="'Inter', sans-serif" font-weight="700" font-size="6.5" fill="#c5a059" style="letter-spacing: 0.35em; text-transform: uppercase;">Global Strategic Hub</text>
+        </svg>
+      </div>
 
-    <div>
-      <h3 class="text-lg font-semibold mb-4 text-white">Zimplified Global</h3>
-      <p class="text-slate-400 text-sm font-light">
-        Strategic advisory firm based in Dubai.
-      </p>
+      <div class="flex flex-col gap-4">
+        <p class="text-sm text-slate-500 uppercase tracking-widest font-bold">Dubai Office</p>
+        <p class="text-white">+971 4 553 6964</p>
+        <p class="text-slate-400 text-xs font-light mt-1">Strategic Hub: Business Bay, Dubai</p>
+      </div>
+
+      <div class="flex flex-col gap-4">
+        <p class="text-sm text-slate-500 uppercase tracking-widest font-bold">Engagement</p>
+        <p class="text-white">zimplifiedglobal@gmail.com</p>
+        <p class="text-slate-400 text-xs font-light mt-1">Available for confidential strategic advisory.</p>
+      </div>
+
     </div>
 
-    <div>
-      <p class="text-sm text-slate-400 uppercase tracking-widest font-bold">Dubai Office</p>
-      <p class="mt-2 text-white">+971 4 553 6964</p>
+    <div class="mt-12 flex flex-col md:flex-row justify-between items-center gap-8 text-slate-600 text-[10px] uppercase tracking-[0.5em] font-bold">
+      <p>© 2026 Zimplified Global Company LLC. ALL RIGHTS RESERVED.</p>
+      <div class="flex gap-16 italic font-medium lowercase tracking-widest">
+        <a href="#" class="hover:text-gold transition-all">privacy protocol</a>
+        <a href="#" class="hover:text-gold transition-all">professional terms</a>
+      </div>
     </div>
-
-    <div>
-      <p class="text-sm text-slate-400 uppercase tracking-widest font-bold">Email</p>
-      <p class="mt-2 text-white">zimplifiedglobal@gmail.com</p>
-    </div>
-
   </div>
-
-  <!-- Copyright Bar -->
-  <div class="max-w-7xl mx-auto px-6 border-t border-slate-800 mt-16 pt-8 text-slate-500 text-[10px] uppercase tracking-[0.4em] font-bold">
-    <p>© 2026 Zimplified Global Company LLC. ALL RIGHTS RESERVED.</p>
-  </div>
-
 </footer>
 
-<!-- SCRIPTS -->
+<!-- SCRIPT -->
 <script>
-/* Navbar transition */
-window.addEventListener('scroll', () => {
-  const nav = document.getElementById('navbar');
-  if (window.scrollY > 50) {
-    nav.classList.add('bg-white/70','backdrop-blur-md','shadow-sm','py-3');
-    nav.classList.remove('py-5');
-  } else {
-    nav.classList.remove('bg-white/70','backdrop-blur-md','shadow-sm','py-3');
-    nav.classList.add('py-5');
-  }
-});
-
-/* Intersection Observer for Scroll Reveal */
 const reveals = document.querySelectorAll('.reveal');
-const observerOptions = {
-  threshold: 0.15,
-  rootMargin: '0px 0px -50px 0px'
-};
-
 const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('active');
-    }
+  entries.forEach(e => {
+    if (e.isIntersecting) e.target.classList.add('active');
   });
-}, observerOptions);
+}, { threshold: 0.15 });
 
 reveals.forEach(r => observer.observe(r));
 
-/* Smooth Internal Links */
+// Smooth Scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
