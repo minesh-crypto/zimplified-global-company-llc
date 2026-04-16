@@ -39,7 +39,7 @@
 <body class="bg-[#f8f7f4] text-slate-700 antialiased">
 
 <!-- NAVBAR -->
-<nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-300 py-5">
+<nav id="navbar" class="fixed top-0 left-0 w-full backdrop-blur-md bg-white/70 border-b border-slate-200 z-50 transition-all duration-300 py-5">
   <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
 
     <div class="w-[220px]">
@@ -55,11 +55,11 @@
       <a href="#expertise" class="text-slate-500 hover:text-[#0f172a] transition">Expertise</a>
       <a href="#framework" class="text-slate-500 hover:text-[#0f172a] transition">Framework</a>
       
-      <div class="flex items-center gap-6 border-l border-slate-200 pl-10 ml-2">
-        <span class="text-slate-400 font-medium">Dubai Office</span>
-        <span class="text-[#0f172a] font-bold">+971 4 553 6964</span>
+      <div class="flex items-center border-l border-slate-200 pl-10 ml-2">
+        <span class="text-sm text-slate-500">Dubai Office</span>
+        <span class="ml-2 font-medium text-[#0f172a]">+971 4 553 6964</span>
 
-        <a href="mailto:zimplifiedglobal@gmail.com" class="px-6 py-2 border border-slate-300 rounded-full hover:bg-[#0f172a] hover:text-white transition-all duration-300">
+        <a href="mailto:zimplifiedglobal@gmail.com" class="ml-10 px-6 py-2 border border-slate-300 rounded-full hover:bg-[#0f172a] hover:text-white transition-all duration-300">
           Inquiry
         </a>
       </div>
@@ -69,19 +69,19 @@
 </nav>
 
 <!-- HERO -->
-<section id="home" class="min-h-screen flex items-center pt-32 pb-16 overflow-hidden">
+<section id="home" class="min-h-screen flex items-center pt-20 pb-16 overflow-hidden">
   <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
 
     <div class="max-w-xl reveal active">
-      <p class="text-xs tracking-[0.35em] text-[#c5a059] uppercase mb-4 font-bold">
+      <p class="text-xs tracking-[0.35em] text-[#c5a059] uppercase font-bold mb-3">
         Strategic Advisory · Dubai
       </p>
 
-      <h1 class="text-[52px] md:text-[72px] leading-[1.1] tracking-tight text-[#0f172a]">
+      <h1 class="text-[52px] md:text-[72px] leading-[1.1] tracking-tight text-[#0f172a] font-serif mb-5">
         Structuring<br>Global Growth.
       </h1>
 
-      <p class="mt-6 text-slate-600 text-lg font-light leading-relaxed">
+      <p class="text-slate-600 text-lg font-light leading-relaxed max-w-lg">
         Strategic advisory for market entry, operational alignment,
         and scalable international expansion.
       </p>
@@ -219,42 +219,32 @@
 </section>
 
 <!-- FOOTER -->
-<footer class="bg-[#0f172a] text-white pt-32 pb-16">
+<footer class="bg-[#0f172a] text-white py-20">
 
-  <div class="max-w-7xl mx-auto px-6">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
 
-    <div class="grid md:grid-cols-3 gap-24 items-start">
-
-      <div class="w-[220px]">
-        <svg viewBox="0 0 220 50" xmlns="http://www.w3.org/2000/svg" class="w-full h-auto">
-          <rect width="36" height="36" fill="#f8f7f4" rx="2"/>
-          <path d="M10 10H26L10 26H26" stroke="#0f172a" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
-          <text x="50" y="22" font-family="'Playfair Display', serif" font-weight="900" font-size="18" fill="#f8f7f4">ZIMPLIFIED</text>
-          <text x="50" y="36" font-family="'Inter', sans-serif" font-weight="700" font-size="6.5" fill="#c5a059" style="letter-spacing: 0.35em; text-transform: uppercase;">Global Strategic Hub</text>
-        </svg>
-      </div>
-
-      <div class="flex flex-col gap-4 text-[11px] uppercase tracking-[0.3em] font-bold text-slate-400">
-        <a href="#expertise" class="hover:text-gold transition">Our Expertise</a>
-        <a href="#framework" class="hover:text-gold transition">Strategy Framework</a>
-      </div>
-
-      <div class="md:text-right text-[11px] uppercase tracking-[0.3em] font-bold flex flex-col gap-4 text-slate-300">
-        <p>Business Bay, Dubai, UAE</p>
-        <p class="text-white">+971 4 553 6964</p>
-        <p class="text-white border-b border-white/10 pb-1 self-end inline-block lowercase">zimplifiedglobal@gmail.com</p>
-      </div>
-
+    <div>
+      <h3 class="text-lg font-semibold mb-4 text-white">Zimplified Global</h3>
+      <p class="text-slate-400 text-sm font-light">
+        Strategic advisory firm based in Dubai.
+      </p>
     </div>
 
-    <div class="border-t border-slate-800 mt-24 pt-8 flex flex-col md:flex-row justify-between items-center gap-8 text-slate-600 text-[9px] uppercase tracking-[0.5em] font-bold">
-      <p>© 2026 Zimplified Global Company LLC. ALL RIGHTS RESERVED.</p>
-      <div class="flex gap-16 italic font-medium lowercase tracking-widest">
-        <a href="#" class="hover:text-gold transition-all">privacy protocol</a>
-        <a href="#" class="hover:text-gold transition-all">professional terms</a>
-      </div>
+    <div>
+      <p class="text-sm text-slate-400 uppercase tracking-widest font-bold">Dubai Office</p>
+      <p class="mt-2 text-white">+971 4 553 6964</p>
     </div>
 
+    <div>
+      <p class="text-sm text-slate-400 uppercase tracking-widest font-bold">Email</p>
+      <p class="mt-2 text-white">zimplifiedglobal@gmail.com</p>
+    </div>
+
+  </div>
+
+  <!-- Copyright Bar -->
+  <div class="max-w-7xl mx-auto px-6 border-t border-slate-800 mt-16 pt-8 text-slate-500 text-[10px] uppercase tracking-[0.4em] font-bold">
+    <p>© 2026 Zimplified Global Company LLC. ALL RIGHTS RESERVED.</p>
   </div>
 
 </footer>
